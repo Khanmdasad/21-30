@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+
+:root {
+    // color variable
+    --bg-color: #F3F6FF;
+    --card-bg-color: #FFFFFF;
+    --border-color: #C2C5E2;
+
+    // text variable
+    --text-color: #1E2246;
+    --body-text: 'Poppins';
+    --heading-text: 'Merriweather', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// wrapper start
+.wrapper {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--body-text);
+    color: var(--text-color);
+
+
+    // container start
+    .contianer {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // text-align: center;
+
+        // header start
+        .header {
+            font-family: var(--heading-text);
+            margin-bottom: 20px;
+        }
+
+        // header ends
+
+        // main start
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            //card start
+            .card {
+                margin: 20px;
+                background: var(--card-bg-color);
+                padding: 60px;
+                border-radius: 20px;
+                box-shadow: 0px 24px 44px 0px rgba(180, 191, 225, 0.40);
+
+                .heading {
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    .img {
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        background: linear-gradient(132deg, #BBCBFB 5.22%, #F1D4FF 100.41%);
+                        border-radius: 10px;
+                    }
+
+                    .second {
+                        background: linear-gradient(132deg, #FBBBDA 5.22%, #FFD4D4 100.41%);
+                    }
+
+                    .third {
+                        background: linear-gradient(132deg, #BBEBFB 5.22%, #EFD4FF 100.41%);
+                    }
+
+                    .forth {
+                        background: linear-gradient(132deg, #BBFBE4 5.22%, #D4E0FF 100.41%);
+                    }
+
+                    .fifth {
+                        background: linear-gradient(132deg, #BBD8FB 5.22%, #FFD4D4 100.41%);
+                    }
+
+                    .sixth {
+                        background: linear-gradient(132deg, #FFDEC7 5.22%, #D4D9FF 100.41%);
+                    }
+                }
+
+                .heading-text {
+                    color: var(--text-color);
+                    font-size: 24px;
+                    font-weight: 1000;
+                }
+
+                .text {
+                    border: 1px solid var(--border-color);
+                    padding: 16px 36px;
+                    background: transparent;
+                    cursor: pointer;
+                    border-radius: 10px;
+
+                    font-size: 18px;
+                    color: var(--text-color);
+                    font-weight: 600;
+                }
+
+                .active {
+                    background: var(--text-color);
+                    color: var(--card-bg-color);
+                }
+
+            }
+
+            // card ends
+        }
+
+        // main ends
+
+        // footer start
+        .footer {
+            width: 76%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+
+        // footer ends
+    }
+
+    // container ends
+}
+
+// wrapper ends

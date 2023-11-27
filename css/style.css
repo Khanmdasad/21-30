@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+:root {
+  --bg-color: #F3F6FF;
+  --card-bg-color: #FFFFFF;
+  --border-color: #C2C5E2;
+  --text-color: #1E2246;
+  --body-text: "Poppins";
+  --heading-text: "Merriweather", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--body-text);
+  color: var(--text-color);
+}
+.wrapper .contianer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .contianer .header {
+  font-family: var(--heading-text);
+  margin-bottom: 20px;
+}
+.wrapper .contianer .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.wrapper .contianer .main .card {
+  margin: 20px;
+  background: var(--card-bg-color);
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 24px 44px 0px rgba(180, 191, 225, 0.4);
+}
+.wrapper .contianer .main .card .heading {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.wrapper .contianer .main .card .heading .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: linear-gradient(132deg, #BBCBFB 5.22%, #F1D4FF 100.41%);
+  border-radius: 10px;
+}
+.wrapper .contianer .main .card .heading .second {
+  background: linear-gradient(132deg, #FBBBDA 5.22%, #FFD4D4 100.41%);
+}
+.wrapper .contianer .main .card .heading .third {
+  background: linear-gradient(132deg, #BBEBFB 5.22%, #EFD4FF 100.41%);
+}
+.wrapper .contianer .main .card .heading .forth {
+  background: linear-gradient(132deg, #BBFBE4 5.22%, #D4E0FF 100.41%);
+}
+.wrapper .contianer .main .card .heading .fifth {
+  background: linear-gradient(132deg, #BBD8FB 5.22%, #FFD4D4 100.41%);
+}
+.wrapper .contianer .main .card .heading .sixth {
+  background: linear-gradient(132deg, #FFDEC7 5.22%, #D4D9FF 100.41%);
+}
+.wrapper .contianer .main .card .heading-text {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 1000;
+}
+.wrapper .contianer .main .card .text {
+  border: 1px solid var(--border-color);
+  padding: 16px 36px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.wrapper .contianer .main .card .active {
+  background: var(--text-color);
+  color: var(--card-bg-color);
+}
+.wrapper .contianer .footer {
+  width: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
